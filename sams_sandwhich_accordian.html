@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="sams_sandwhich_accordian.css" rel="stylesheet" type="text/css">
+</head>
+	<div class="topnav" id="myTopnav">
+  <a href="task_1_inputs.html">Task 1</a>
+  <a href="task_2_inputs.html" >Task 2</a>
+  <a href="task_3_email&date.html">Task 3</a>
+  <a href="mathquiz.html">Math Quiz</a>
+	<a href="task_6.html" > Checkboxes</a>
+	<a href="task_7.html"> Task 7</a>
+	<a href="task_11_event_listeners.html"> Task 11</a>
+	<a href="sams_sandwhich_accordian.html" class="active"> Sam Sandwhich</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	</div>
+
+<body>
+	<h1>Sam's sandwhich</h1>
+	<p></p>
+	<h2> Place your order here</h2>
+	
+	<form name="order">	
+
+		<button type="button" class="accordion">Sandwich legnth</button>
+		<div class="panel">
+		
+		<label><input type="radio" name="bread_length" value="6inch">6 inch</label>
+		<label><input type="radio" name="bread_length" value="12inch">12 inch</label>
+		
+			</div>
+		
+		<button type="button" class="accordion">Bread Type</button>
+		<div class="panel">
+			
+		<label><input type="radio" name="bread_type" value="White">White</label>
+	    <label><input type="radio" name="bread_type" value="Wholegrain">Wholegrain</label>
+		<label><input type="radio" name="bread_type" value="Italian">Italian</label>
+		<label><input type="radio" name="bread_type" value="Rye">Rye</label>
+		<label><input type="radio" name="bread_type" value="Wrap">Wrap</label>
+		
+			</div>
+		
+		<button type="button" class="accordion">Cheese Type</button>
+		<div class="panel">
+			
+		<label><input type="radio" name="cheese" value="Swiss">Swiss</label>
+		<label><input type="radio" name="cheese" value="Cheddar">Cheddar</label>
+		<label><input type="radio" name="cheese" value="Feta">Feta</label>
+		<label><input type="radio" name="cheese" value="No Cheese">No Cheese</label>
+				
+			</div>
+		
+		<button type="button" class="accordion">Meat Type</button>
+		<div class="panel">
+		
+		<label><input type="radio" value="Ham">Ham</label>
+		<label><input type="radio" value="Tuna">Tuna</label>
+		<label><input type="radio" value="Turkey">Turkey</label>
+		<label><input type="radio" value="Salami">Salami</label>
+		<label><input type="radio" value="Meatball">Meatball</label>
+		<label><input type="radio" value="Chicken">Chicken</label>
+				
+			</div>
+		
+		<button type="button" class="accordion">Salads</button>
+		<div class="panel">
+		
+		<label><input type="checkbox" value="Lettuce">Lettuce</label>
+		<label><input type="checkbox" value="Tomatoes">Tomatoes</label>
+		<label><input type="checkbox" value="Carrot">Carrot</label>
+		<label><input type="checkbox" value="Cucumber">Cucumber</label>
+		<label><input type="checkbox" value="Capsicum">Capsicum</label>
+			
+			</div>
+	
+		<button type="reset">Reset</button>
+		
+	</form>
+	
+	<h2>Order Summary</h2>
+	<div id="radioResults"></div>
+	
+	
+	<h2>Your detail</h2>
+	<label>Your name: </label><input type="text" id="customer_name" placeholder="Please type your name" pattern="[a-zA-Z]\w{1,39}"> <br>
+	<label> Your phone number: </label><input type="number" id="phone_number" placeholder="Please type your phone number">
+	<br>
+	<input type="button" value="submit" id="submit_button" onclick="loopForm(document.order)">
+	
+	
+	
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+		apiKey: "AIzaSyAWtAHK_YpUkIKHix4blp0LmFoD20U969o",
+		authDomain: "sams-sandwhich.firebaseapp.com",
+		databaseURL: "https://sams-sandwhich.firebaseio.com",
+		projectId: "sams-sandwhich",
+		storageBucket: "sams-sandwhich.appspot.com",
+		messagingSenderId: "383553582465",
+		appId: "1:383553582465:web:814fdf9b2a8f7129ed2480"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	 
+	</script>
+	<script  src="sams_sandwhich_v1.js"> </script>
+	<script  src="accordian.js"> </script>
+
+</body>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+</html>
